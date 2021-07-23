@@ -1,0 +1,7 @@
+customconfig.content:
+  path: '/page_json/FOOBAR12345/2'
+  defaults:
+    _controller: '\Drupal\customconfig\Controller\ExampleController::myPage'
+    _title: 'My first page in D8'
+  requirements:
+   _custom_access_check: 'TRUE'

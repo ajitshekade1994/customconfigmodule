@@ -1,0 +1,10 @@
+services:
+  customconfig.route_subscriber:
+    class: Drupal\customconfig\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  customconfig.custom_access_check:
+    class: Drupal\customconfig\Access\CustomAccessCheck
+
+    tags:
+      - { name: access_check, applies_to: _custom_access_check }    
